@@ -1,0 +1,11 @@
+import requests
+import json
+
+r = requests.get('demo API')
+
+keep_data = r.json()
+mail = keep_data.get('data')
+
+with open('emails.txt', 'w') as file
+    for i in mail
+        file.write(i['email'] + 'n')
